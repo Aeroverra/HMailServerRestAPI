@@ -1,5 +1,5 @@
-using HMailServerRestApi.Models.appsettings;
-using HMailServerRestApi.Services;
+using HMailLib;
+using HMailLib.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

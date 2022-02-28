@@ -1,11 +1,11 @@
-﻿using HMailServerRestApi.Services;
+﻿using HMailLib;
+using HMailLib.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMailServerRestApi.Controllers
 {
-
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class DomainsController : Controller
     {
         public HMailService _hmail { get; set; }
@@ -13,11 +13,13 @@ namespace HMailServerRestApi.Controllers
         {
             _hmail = hmail;
         }
-        [HttpGet(Name = "GetDomains")]
-        public IActionResult GetDomains()
+
+        [HttpGet]
+        public IActionResult GetAll()
         {
-            var result = _hmail.GetDomains();
-            return Content(result.ToString());
+            var domains = _hmail.GetDomains();
+            return new JsonResult(domains);
         }
+
     }
 }

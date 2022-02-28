@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMailServerRestApi", "HMailServerRestApi\HMailServerRestApi.csproj", "{0ECA38F6-777E-484C-AD1C-18364D433E9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HMailServerRestApi", "HMailServerRestApi\HMailServerRestApi.csproj", "{0ECA38F6-777E-484C-AD1C-18364D433E9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HMailLib", "HMailLib\HMailLib.csproj", "{61732511-B4EA-4777-8BA6-4903B3FBF36F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0ECA38F6-777E-484C-AD1C-18364D433E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ECA38F6-777E-484C-AD1C-18364D433E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ECA38F6-777E-484C-AD1C-18364D433E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61732511-B4EA-4777-8BA6-4903B3FBF36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61732511-B4EA-4777-8BA6-4903B3FBF36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61732511-B4EA-4777-8BA6-4903B3FBF36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61732511-B4EA-4777-8BA6-4903B3FBF36F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
