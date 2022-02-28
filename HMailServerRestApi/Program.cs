@@ -1,5 +1,6 @@
 using HMailLib;
 using HMailLib.Models;
+using HMailServerRestApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<HMailSettings>(configuration.GetSection("HMailSettings"));
 builder.Services.AddTransient<HMailService>();
 var app = builder.Build();
+
+app.UseMiddleware<AuthenticationMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
